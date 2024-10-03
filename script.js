@@ -29,4 +29,20 @@
       ex2_content.innerText += "Numer jest poprawny";
     }
   };
+
+  const ex3_one = document.getElementById("ex3_one");
+  const ex3_two = document.getElementById("ex3_two");
+  const ex3_element = document.getElementById("ex3_element");
+
+  ex3_element.ondragend = function (e) {
+    over.appendChild(this);
+  };
+
+  var over = null;
+  ex3_one.ondragover = function (e) {
+    over = this;
+  };
+  ex3_two.ondragover = function (e) {
+    over = this;
+  };
 })();
